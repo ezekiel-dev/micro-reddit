@@ -10,4 +10,6 @@ class User < ApplicationRecord
               confirmation: true
   validates :password_confirmation, presence: true
 
+  has_many :posts
+
 end
